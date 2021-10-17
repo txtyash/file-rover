@@ -1,1 +1,1 @@
-/home/zim/butcher/target/debug/butcher: /home/zim/butcher/src/main.rs
+/home/zim/.github/butcher/target/debug/butcher: /home/zim/.github/butcher/src/main.rs
