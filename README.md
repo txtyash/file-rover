@@ -1,4 +1,4 @@
-# butcher(Currently not working due to few major changes and scheduled improvements. Will notify on reddit once it is working)
+# butcher
 
 ### Vim plugin to quickly parse strings into arrays.
 ### It is painful to write arrays in any programming language, so butcher makes it easy for you.
@@ -11,7 +11,8 @@ Plug "zim0369/butcher"
 ```
 Add this to your vimrc:
 ```
-noremap <leader>q :'<,'>. !xargs $HOME/.vim/plugged/butcher/target/release/butcher<CR>
+noremap <leader>n :'<,'>. !xargs $HOME/.vim/plugged/butcher/nums<CR>
+noremap <leader>s :'<,'>. !xargs /home/zim/.vim/plugged/butcher/string<CR>
 ```
 
 
@@ -20,9 +21,9 @@ Suppose you have this line in your program that you want to turn into an array o
 ```
 Turn this into an array of strings
 ```
-Now visually select the entire line and press `<leader>q`.
+Now visually select the entire line and press `<leader>s`.
 
-The above line gets replace with this beautiful array :
+The above line gets replaced with this beautiful array :
 ```
 ["Turn", "this", "into", "an", "array", "of", "strings"]
 ```
@@ -32,11 +33,23 @@ Suppose you have this word in your program that you want to turn into an array o
 ```
 Characters
 ```
-Now visually select the entire line and press `<leader>q`.
+Now visually select the entire line and press `<leader>s`.
 
-The above line gets replace with this beautiful array :
+The above line gets replaced with this beautiful array :
 ```
 ['C', 'h', 'a', 'r', 'a', 'c', 't', 'e', 'r', 's']
+```
+
+Array of numbers?
+Suppose you have this line in your program that you want to turn into an array of numbers.
+```
+1 2 4 5 4 5 5
+```
+Now visually select the entire line and press `<leader>n`.
+
+The above line gets replaced with this beautiful array :
+```
+[1, 2, 4, 5, 4, 5, 5]
 ```
 
 You can go ahead and change the keybindings.
