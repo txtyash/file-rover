@@ -1,4 +1,4 @@
-# butcher
+# butcher(Currently not working due to few major changes and scheduled improvements. Will notify on reddit once it is working)
 
 ### Vim plugin to quickly parse strings into arrays.
 ### It is painful to write arrays in any programming language, so butcher makes it easy for you.
