@@ -12,7 +12,7 @@ Plug "zim0369/butcher"
 Add this to your vimrc:
 ```
 noremap <leader>n :'<,'>. !xargs $HOME/.vim/plugged/butcher/nums<CR>
-noremap <leader>s :'<,'>. !xargs /home/zim/.vim/plugged/butcher/string<CR>
+noremap <leader>s :'<,'>. !xargs $HOME/.vim/plugged/butcher/string<CR>
 ```
 
 
